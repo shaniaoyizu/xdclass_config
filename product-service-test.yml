@@ -11,4 +11,4 @@ spring:
   zipkin:
       base-url: http://192.168.2.2:9411/
 env: test
-branch: master
+branch: test
