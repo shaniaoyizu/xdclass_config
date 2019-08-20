@@ -1,0 +1,22 @@
+﻿server:
+  port: 9000
+
+zuul:
+  routes:
+    order-service: /apigateway/order/**
+    product-service: /apigateway/product/**
+  ignored-patterns: /*-service/**
+  #处理http请求头为空的问题
+  sensitive-headers:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  rabbitmq:
+    host: 192.168.2.2
+    port: 5672
+    username: guest
+    password: guest
