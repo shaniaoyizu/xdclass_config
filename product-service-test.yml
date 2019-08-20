@@ -6,19 +6,16 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 spring:
-  application:
-    name: product-service
   zipkin:
       base-url: http://192.168.2.2:9411/
+  rabbitmq:
+    host: 192.168.2.2
+    port: 5672
+    username: guest
+    password: guest
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-spring:
-  rabbitmq:
-    host: 192.168.2.2
-    port: 5672
-    username: guest
-    password: guest
