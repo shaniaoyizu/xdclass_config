@@ -10,5 +10,5 @@ spring:
     name: product-service
   zipkin:
       base-url: http://192.168.2.2:9411/
-env: dev2019-08-20
+env: dev2019-08-20 00:31
 branch: test
